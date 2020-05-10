@@ -5,6 +5,9 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -15,10 +18,10 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: [
-    '@typescript-eslint',
-  ],
+  plugins: ['@typescript-eslint', 'prettier'],
+
   rules: {
+    'prettier/prettier': 'error',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -27,6 +30,7 @@ module.exports = {
       },
     ],
   },
+
   settings: {
     'import/resolver': {
       typescript: {},
