@@ -26,8 +26,6 @@ class AppointmentsRepository implements IAppointmentsRepository {
           getMonth(appointment.date) + 1 === month &&
           getYear(appointment.date) === year,
       );
-
-      console.log(appointments);
       return appointments;
   }
 
