@@ -43,7 +43,6 @@ class ListProviderAppointmentsService {
         }
       );
 
-      console.log('Foi no banco');
       await this.cacheProvider.save(cacheKey, appointments);
     }
 
