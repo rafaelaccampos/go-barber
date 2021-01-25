@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@types/redis": "^2.8.28",
     "bcryptjs": "^2.4.3",
     "celebrate": "^13.0.4",
     "class-transformer": "^0.3.2",
@@ -26,6 +27,8 @@
     "multer": "^1.4.2",
     "nodemailer": "^6.4.11",
     "pg": "^8.1.0",
+    "rate-limiter-flexible": "^2.2.1",
+    "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.3.0",
     "typeorm": "^0.2.24",
